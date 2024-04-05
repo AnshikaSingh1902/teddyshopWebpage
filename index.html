@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: pink;
+        }
+        .logo img{
+            width:80px;
+        }
+
+        
+        .nav-links li {
+            border: 1px solid white;
+            border-radius: 20px;
+            margin: 20px;
+            padding:10px 20px;
+            display: inline-block;
+        }
+        .nav-links li a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        header{
+            height: 80px;
+            padding: 0px 20px;
+            background-color: palevioletred;
+            justify-content: space-around;
+            align-items: center;
+            /* border-bottom: 3px solid yellow ; */
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li:hover{
+            text-shadow: 0px 2px 4px white;
+            border:3px solid white;
+            background-color: pink;
+            border-radius: 20px;
+            animation: 1s ease-in-out;   
+        }
+        main{
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .content-left{
+            text-align: center;
+            padding-right: 60px;
+        }
+        .content-left h2{
+            color: white;
+            font-size: 4em;
+            margin-bottom: 20px;
+            
+        }
+        .content-left p{
+           
+            color: white;
+            font-size: 20px;
+            margin-bottom: 20px;
+
+        }
+        .btn{
+            padding: 10px 30px;
+            border-radius: 20px;
+            background-color: rgb(226, 104, 155);
+            color: white;
+            border: 2px solid white;
+    
+        }
+        .btn:hover{
+            text-shadow: 0px 2px 4px white;
+            border:3px solid white;
+            background-color: pink;
+            border-radius: 20px;
+            color: palevioletred;
+            animation: 1s ease-in-out; 
+        }
+        .content-right img{
+            width:600px;
+        }
+
+        footer{
+            justify-content: center;
+            background-color: palevioletred;
+        }
+        .sub-footer{
+            justify-content: center;
+            display: flex;
+            gap:30px;
+            
+        }
+        .sub-footer a{
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+       .hover-links:hover{
+        text-shadow: 0px 2px 4px rgb(207, 187, 187);
+       }
+
+       
+       .heart{
+        position: absolute;
+        top:13%;
+        left:70%;
+        transform: translateX(-50%);
+        visibility: hidden;
+        /* opacity: 0; */
+        transition: visibility 0.1s ease;
+       }
+
+       .content-right:hover .heart {
+        /* opacity: 1; */
+            visibility: visible;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt-text="LOGO">
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Offer</a></li>                   
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-left">
+            <h2>Your Teddy Shop</h2>
+            <p>Welcome to Your Teddy Shop, where every hug is infused with love <br>
+                and warmth! Nestled in the heart of Bijnor,<br> our enchanting emporium is a haven for teddy bear enthusiasts of all ages.<br> Since 2001, we've delighted in curating an extraordinary collection of teddy bears,<br> each brimming with personality and charm.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="content-right">
+            <img src="heart.png" class="heart" style="width: 80px;">
+            <img src="teddy.png" class="teddy">
+        </div>
+    </main>
+
+    <footer>
+        <div class="sub-footer">
+            <a href="#" class="hover-links">Privacy Policy</a>
+            <a href="#" class="hover-links">Terms and Conditions</a>
+            <a href="#" class="hover-links">Security Information</a>
+            <a href="#" class="hover-links"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/_.anshiikaa._._/" class="hover-links"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    <footer>
+
+        <script src="https://kit.fontawesome.com/e4aa47bd24.js" crossorigin="anonymous"></script>
+        
+</body>
+</html>
